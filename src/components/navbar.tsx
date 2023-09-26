@@ -1,16 +1,16 @@
 'use client'
 
 import Image from "next/image"
-import CarouselComponent from "./carousel"
-import Container from "./container"
 
 const Navbar = () => {
     return (
-        <nav className="w-full flex-col bg-white">
+        <nav className="w-full lg:-mt-10 px-5 sm:px-16 md:px-20 2xl:px-40 flex-col bg-white">
                 <div className="relative w-full px-8" style={{ backgroundColor: '#252F3D'}}>        
                     
                 </div>
-                <div className=" py-5 flex items-center justify-between">
+
+                {/* mobile */}
+                <div className="flex py-5 lg:hidden items-center justify-between">
                     <Image 
                         alt='logo'
                         src='/icons/logo.svg'
@@ -31,7 +31,31 @@ const Navbar = () => {
                         height={16}
                     />
                     </div>
-                </div>               
+                </div>    
+
+                {/* 1280px */}
+                <div className="hidden py-5 lg:flex items-center justify-between">
+                    <Image 
+                        alt='logo'
+                        src='/icons/logo.svg'
+                        width={192}
+                        height={36}
+                    />
+                    <div className="flex items-center justify-center gap-x-3">
+                    <Image 
+                        alt='McAfee logo'
+                        src='/icons/security.svg'
+                        width={88}
+                        height={32}
+                    />
+                    <Image 
+                        alt='norton logo'
+                        src='/icons/norton.svg'
+                        width={88}
+                        height={32}
+                    />
+                    </div>
+                </div> 
         </nav>
     )
 

@@ -7,7 +7,7 @@ import Navbar from "@/components/navbar";
 export default async function Home() {
 
   return (
-    <div className='h-full bg-gray-50 lg:pt-10'>
+    <div className='h-full bg-gray-50 lg:bg-white lg:pt-10'>
       <Navbar />
       <Heading />
       <Services />
