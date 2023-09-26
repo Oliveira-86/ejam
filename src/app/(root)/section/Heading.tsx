@@ -39,7 +39,7 @@ const Heading = () => {
     return (
         <Container>
             <section className="w-full mt-10">
-                <h1 className="w-full text-center text-2xl lg:text-5xl font-medium">
+                <h1 className="w-full text-center text-3xl lg:text-5xl font-medium">
                     Wait ! your order in progress.
                 </h1>
                 <h2 className="w-full text-center text-base lg:text-2xl text-gray-700 font-normal mt-3 lg:mt-5">

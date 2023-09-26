@@ -4,13 +4,13 @@ const ProductDescription = () => {
     return (
         <div className="w-full">
             <div className="w-full hidden lg:block">
-                <p className="text-center text-3xl  font-normal">
+                <p className="text-center lg:text-start text-3xl  font-normal">
                 <span className="text-blue-500"> ONE TIME ONLY </span> 
                     special price for 6 extra Clarifion for only 
                     <span className="text-blue-500"> $14 each </span> ($84.00 total!)
                 </p>
             </div>
-            <div className="w-full flex items-center justify-center mt-6">
+            <div className="w-full flex items-center justify-center mt-4">
 
                 {/* mobile */}
                 <div className="p-1 bg-blue-500 rounded-lg block lg:hidden">
@@ -203,10 +203,10 @@ const ProductDescription = () => {
                 </div>
             </div>
 
-            {/* mobile */}
-            <div className="w-full border flex border-gray-300 rounded-md p-3 mb-7">
+            {/* 1280px */}
+            <div className="hidden lg:flex w-full border border-gray-300 rounded-md p-3 mb-7">
                  <div className="w-full flex items-center justify-center gap-2">
-                    <p className="text-xs font-normal text-gray-600 border-r border-gray-300 pr-4 mr-3">
+                    <p className="text-[10px] font-normal text-gray-600 border-r border-gray-300 pr-2 mr-1">
                         Free shipping
                     </p>
                     <Image    
@@ -215,10 +215,10 @@ const ProductDescription = () => {
                         width={12}
                         height={12}
                     />
-                    <p className="text-xs font-normal text-gray-600 border-r border-gray-300 pr-4 mr-3">
+                    <p className="md:text-[8px] xl:text-[10px] font-normal text-gray-600 border-r border-gray-300 pr-2 mr-1">
                         Secure 256-bit SSL encryption
                     </p>
-                <div className="flex items-center justify-center gap-x-1">
+                <div className="flex items-center justify-center gap-x-1 overflow-x-hidden">
                     <Image    
                         alt="product image"
                         src='/images/visa.svg'
